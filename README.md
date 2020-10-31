@@ -2,6 +2,7 @@
 # OpenDSA-AWS
 
 - [Table of Contents](#opendsa-aws)
+  * [Important](#important)
   * [Introduction](#introduction)
   * [Prerequisites](#prerequisites)
   * [Solution Architecture](#solution-architecture)
@@ -14,8 +15,11 @@
   * [To-Do list](#to-do-list)
   * [Contribution](#contribution)
 
+## Important
+This project is still under development. If you rely upon this project, you do so at your own risk.
+
 ## Introduction
-OpenDSA-AWS is a Cloud Formation template that automates OpenDSA infrastructure provisioning and application deployment on AWS.
+OpenDSA-AWS is a CloudFormation template that automates OpenDSA infrastructure provisioning and application deployment on AWS.
 
 ## Prerequisites
 To be able to deploy your instance of OpenDSA system you need to do the following:
@@ -44,21 +48,21 @@ After OpenDSA-AWS template execution completes it will create the following reso
 
 | AWS Region | Short name | |
 | -- | -- | -- |
-| US East (Ohio) | us-east-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| US East (N. Virginia) | us-east-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| US West (Oregon) | us-west-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| US West (N. California) | us-west-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| Canada (Central) | ca-central-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| EU (Paris) | eu-west-3 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-3#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| EU (London) | eu-west-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| EU (Ireland) | eu-west-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| EU (Frankfurt) | eu-central-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| Asia Pacific (Seoul) | ap-northeast-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| Asia Pacific (Tokyo) | ap-northeast-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| Asia Pacific (Sydney) | ap-southeast-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| Asia Pacific (Singapore) | ap-southeast-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| Asia Pacific (Mumbai) | ap-south-1 |  [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
-| South America (São Paulo) | sa-east-1 |  [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=sa-east-1#/stacks/new?stackName=opendsa&templateURL=https://opendsa.s3.amazonaws.com/opendsa-aws.yaml) |
+| US East (Ohio) | us-east-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| US East (N. Virginia) | us-east-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| US West (Oregon) | us-west-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| US West (N. California) | us-west-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| Canada (Central) | ca-central-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| EU (Paris) | eu-west-3 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-3#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| EU (London) | eu-west-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| EU (Ireland) | eu-west-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| EU (Frankfurt) | eu-central-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| Asia Pacific (Seoul) | ap-northeast-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| Asia Pacific (Tokyo) | ap-northeast-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| Asia Pacific (Sydney) | ap-southeast-2 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| Asia Pacific (Singapore) | ap-southeast-1 | [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| Asia Pacific (Mumbai) | ap-south-1 |  [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
+| South America (São Paulo) | sa-east-1 |  [![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=sa-east-1#/stacks/new?stackName=opendsa&templateURL=https://raw.githubusercontent.com/OpenDSA/OpenDSA-AWS/TimeMe/opendsa-aws.yaml) |
 
 * Fill in the template parameters
     - *Email*: Provide your institution email address to get important notifications regarding the infrastructure resources staus and certificate expiry date.
