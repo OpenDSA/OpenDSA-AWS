@@ -24,6 +24,7 @@ OpenDSA-AWS is a Cloud Formation template that automates OpenDSA infrastructure 
 ## Prerequisites
 To be able to deploy your instance of OpenDSA system you need to do the following:
 
+* [AWS Educate Starter account](https://aws.amazon.com/education/awseducate/) OR
 * [Create and Activate a new AWS account](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/#:~:text=Open%20the%20Amazon%20Web%20Services,Create%20a%20new%20AWS%20account)
 * [Secure your AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)
 * [Register a domain using AWS Route53 service](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html)
