@@ -2,6 +2,7 @@
 # OpenDSA-AWS
 
 - [Table of Contents](#opendsa-aws)
+  * [Important](#important)
   * [Introduction](#introduction)
   * [Prerequisites](#prerequisites)
   * [Solution Architecture](#solution-architecture)
@@ -13,6 +14,9 @@
   * [About Let's Encrypt](#about-let-s-encrypt)
   * [To-Do list](#to-do-list)
   * [Contribution](#contribution)
+
+## Important
+This project is still under development. If you rely upon this project, you do so at your own risk.
 
 ## Introduction
 OpenDSA-AWS is a Cloud Formation template that automates OpenDSA infrastructure provisioning and application deployment on AWS.
