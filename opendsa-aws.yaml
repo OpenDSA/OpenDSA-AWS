@@ -436,6 +436,8 @@ Resources:
                 source .bash_profile
                 git clone https://github.com/OpenDSA/OpenDSA.git /home/ubuntu/OpenDSA
                 cd /home/ubuntu/OpenDSA
+                git fetch --all --tags --prune
+                git checkout tags/OpenDSA-AWS
                 make pull
 
                 # create venv
@@ -450,8 +452,10 @@ Resources:
 
                 # clone and install OpenDSA-LTI dependencies
                 git clone https://github.com/OpenDSA/OpenDSA-LTI.git /home/ubuntu/OpenDSA-LTI
-
                 cd /home/ubuntu/OpenDSA-LTI
+                git fetch --all --tags --prune
+                git checkout tags/OpenDSA-AWS
+
                 bundle install --deployment --without development test
 
                 # make a link from OpenDSA into OpenDSA-LTI
